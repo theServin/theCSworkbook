@@ -1,0 +1,107 @@
+.container{
+    position: sticky;
+    top: 0px;
+    color: white;
+    background-color: rgb(39, 38, 44);
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    width: 100%;
+    box-shadow: gray 6px 0px 10px ;
+}
+
+.line{
+    height: 6px;
+    width: 50px;
+    background-color: white;
+    margin: 8px 0px;
+    transition: 0.3s ease-in;
+}
+.hamburger{
+    cursor: pointer;
+}
+ul{
+    position: fixed;
+    right: 0%;
+    top: 7vh;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(39, 38, 44);
+    width: 20vw;
+    list-style: none;
+    height: 100vh;
+    font-size: 30px;
+    padding: 0rem 0rem 10rem 0rem;
+    transition: 0.3s ease-in;
+}
+ul.hide{
+    right: -1000px;
+}
+li{
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    width: 100%;
+    text-align: center;
+}
+li:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
+    text-align: center;
+}
+.hamburger.close>.line:nth-child(2){
+    transform: skew(60deg);
+    transform: rotate(135deg);
+    top: 40px;
+    position: absolute;
+    transition: 0.3s ease-in;
+    
+}
+.hamburger.close>.line:nth-child(1){
+    position: absolute;
+    transform: skew(60deg);
+    transform: rotate(405deg);
+    top: 40px;
+    transition: 0.3s ease-in;
+    
+}
+.hamburger.close>.line:nth-child(3){
+    background-color: rgb(39, 38, 44);
+    transition-delay: 0.1s;
+}
+.line:nth-child(3){
+    transition: 0.2s ease;
+    transition-delay: 0.2s;
+}
+.Big{
+    width: 100%;
+    padding: 0%!important;
+    margin: 0%!important;
+    text-align: center;
+    font-size: 104px;
+    text-shadow: rgb(214, 212, 212) 10px 10px 10px;
+    
+}
+.small{
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(173, 169, 169);
+    text-align: right;
+}
+
+@media screen and (max-width: 760px) {
+    ul{
+        width: 100vw;
+        top: 12vh;
+    }
+    .container>h1{
+        font-size: 20px;
+    }
+    .info{
+        width: 100%!important;
+    }
+}
