@@ -6,7 +6,7 @@ function Unit({title, lessons, border, to}){
         <div className={"Unit "+border}>
             <h1>{title}</h1>
             <div className="lessons">
-            {lessons.map(lesson=><p><Link to={"/CS1/"+to}  style={{ textDecoration: 'none', color:'black' }}>{lesson}</Link></p>)}
+            {lessons.map(lesson=><p><Link to={"/TheCSWorkbook/CS1/"+to}  style={{ textDecoration: 'none', color:'black' }}>{lesson}</Link></p>)}
             </div>
         </div>
     )

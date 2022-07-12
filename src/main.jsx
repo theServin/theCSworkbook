@@ -17,10 +17,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route index  element={<App />}/>
-      <Route path="/CS1" element={<CS1/>}/>
-      <Route path="/CS1/Chapter1" element={<Chapter1/>}/>
-      <Route path="/*" element={<NotFound/>}/>
+      <Route path="/TheCSWorkbook/" element={<App />}/>
+      <Route path="/TheCSWorkbook/CS1" element={<CS1/>}/>
+      <Route path="/TheCSWorkbook/CS1/Chapter1" element={<Chapter1/>}/>
+      <Route path="/TheCSWorkbook/*" element={<NotFound/>}/>
     </Routes>
   </BrowserRouter>
 );
