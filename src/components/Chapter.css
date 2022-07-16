@@ -21,7 +21,7 @@
 }
 .code p{
     counter-increment: css-counter 1;
-    border: rgb(179, 173, 173) solid 1px ;
+    border: rgb(141, 141, 141) solid 1px ;
 }
 .code p::before{
     content: counter(css-counter);
@@ -33,7 +33,7 @@
     background-color: rgb(136, 135, 135);
 }
 .code p:nth-child(odd){
-    background-color: rgb(247, 244, 244);
+    /* background-color: rgb(247, 244, 244); */
 }
 .lesson>p{
     margin: 10px 0px;
